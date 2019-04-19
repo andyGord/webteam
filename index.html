@@ -1,0 +1,15 @@
+{% extends 'football/f_base.html' %}
+
+{% block title %}
+    Name team
+{% endblock title %}
+
+{% block content %}
+    <h1>Top Teams</h1>
+    {% for nam in name %}
+       <p>
+         {{ nam }}
+       </p>
+
+    {% endfor %}
+{% endblock content %}
